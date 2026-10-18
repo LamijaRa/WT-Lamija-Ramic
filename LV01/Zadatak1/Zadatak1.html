@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Zadatak1</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Razmjena plišanih igračaka</h1>
+            <p><strong>Za koga je događaj: </strong> porodice sa djecom od 3 do 10 godina, studenti i svi građani
+            Sarajeva koji žele pomoći djeci oboljeloj od raka</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Prikupljanje donacija za djecu oboljelu od raka</h2>
+                <img src="Images/rename.png" alt="Razmjena plišanih igračaka" width="200" height="300"/>
+                <p>Razmjena plišanih igračaka je humanitarni događaj na kojem posjetioci donose
+                očuvane plišane igračke i mijenjaju ih za druge. Svaka donesena igračka vrijedi
+                jedan žeton, a žetonom se može uzeti nova igračka sa štanda.</p>
+ 
+                <p>Ulaz je slobodan, ali je na ulazu postavljena kutija za dobrovoljne priloge.
+                Sav prikupljeni novac i dio igračaka bit će doniran djeci na liječenju na
+                Pedijatrijskoj klinici KCUS-a.</p>
+
+                <h3>Šta ponijeti sa sobom</h3>
+                <ul>
+                    <li>Čiste i očuvane plišane igračke (bez oštećenja i oštrih dijelova)</li>
+                    <li>Vrećicu za igračke koje ćete odnijeti kući</li>
+                    <li>Dobru volju i, po želji, novčani prilog za donaciju</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Informacije o događaju</h2>
+                <p>Događaj se održava u <strong>subotu, 14. novembra 2026. godine, od 10:00 do
+                16:00 sati</strong>, u Domu mladih, Skenderija, Terezija bb, Sarajevo.</p>
+ 
+                <p>Da biste učestvovali kao izlagač (sa svojim štandom igračaka), potrebno je
+                da se prijavite do 10. novembra. Popunite podatke iz obrasca ispod i pošaljite
+                ih na e-mail adresu
+                <a href="mailto:prijave@razmjena-plisanih.ba">prijave@razmjena-plisanih.ba</a>.
+                Posjetiocima koji samo dolaze na razmjenu prijava nije potrebna.</p>
+
+                <h3>Obrazac za prijavu</h3>
+                <form>
+                    <p>
+                        <label for="ime">Ime i prezime:</label>
+                        <input type="text" id="ime" name="ime" required/>
+                    </p>
+
+                    <p>
+                        <label for="broj">Broj igračaka koje donosite:</label>
+                        <select id="broj" name="broj">
+                            <option value="1-5">1-5</option>
+                            <option value="6-10">6-10</option>
+                            <option value="11-15">11-15</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="saglasnost" name="saglasnost"/>
+                        <label for="saglasnost">Potvrđujem da su igračke čiste i očuvane</label>
+                    </p>
+
+                    <p>
+                        <button type="button">Prijavi se</button>
+                    </p>
+
+                </form>
+            </section>
+            
+            
+        </main>
+    </body>
+</html>
