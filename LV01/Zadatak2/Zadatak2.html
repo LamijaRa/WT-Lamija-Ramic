@@ -1,86 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="bs">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Paket hurmi</title>
+    <title>Paket cokoladica</title>
   </head>
 
   <body>
-    <h1>Forma: Napravi svoj paket hurmi</h1>
+    <h1>Forma: Napravi svoj paket cokoladica</h1>
 
     <form>
-      <!--Vrsta hurme: tačno jedan izbor -->
-      <fieldset>
-        <legend>Izaberite vrstu hurme:</legend>
+        <p>Izaberite vrstu cokoladice:</p>
+        <input type="radio" id="dubai" name="cokoladica" value="dubai"/>
+        <label for="dubai">Dubai</label><br/>
 
-        <input type="radio" id="dubai" name="hurma" value="dubai" />
-        <label for="dubai">Dubai (pistacija i kadaif)</label><br />
+        <input type="radio" id="snickers" name="cokoladica" value="snickers" />
+        <label for="snickers">Snickers</label><br/>
 
-        <input type="radio" id="snickers" name="hurma" value="snickers" />
-        <label for="snickers">Snickers (kikiriki i karamel)</label><br />
+        <input type="radio" id="mlijecna" name="cokoladica" value="mlijecna" />
+        <label for="mlijecna">Mlijecna cokolada</label><br/>
 
-        <input type="radio" id="basic" name="hurma" value="basic" />
-        <label for="basic">Basic (prirodna hurma)</label><br />
-
-        <input type="radio" id="mix" name="hurma" value="mix" />
-        <label for="mix">Mix (kombinacija više vrsta)</label>
-      </fieldset>
-
-      <!-- 2. Sastav mixa: više izbora (checkbox) -->
-      <fieldset>
-        <legend>
-          Ako ste izabrali Mix, označite koje vrste želite u paketu:
-        </legend>
-
-        <input type="checkbox" id="mix-dubai" name="mix_vrste" value="dubai" />
-        <label for="mix-dubai">Dubai</label><br />
-
-        <input
-          type="checkbox"
-          id="mix-snickers"
-          name="mix_vrste"
-          value="snickers"
-        />
-        <label for="mix-snickers">Snickers</label><br />
-
-        <input type="checkbox" id="mix-basic" name="mix_vrste" value="basic" />
-        <label for="mix-basic">Basic</label><br />
-
-        <input type="checkbox" id="mix-kokos" name="mix_vrste" value="kokos" />
-        <label for="mix-kokos">Kokos</label><br />
-
-        <input
-          type="checkbox"
-          id="mix-cokolada"
-          name="mix_vrste"
-          value="cokolada"
-        />
-        <label for="mix-cokolada">Bijela čokolada</label>
-      </fieldset>
-
-      <!-- 3. Veličina pakovanja: tačno jedan izbor (select) -->
+        <input type="radio" id="bijela" name="cokoladica" value="bijela" />
+        <label for="bijela">Bijela cokolada</label>
+       
       <p>
         <label for="velicina">Izaberite veličinu pakovanja:</label>
         <select id="velicina" name="velicina">
+          <option value="100">100 g</option>
           <option value="250g">250 g</option>
           <option value="500g">500 g</option>
           <option value="1kg">1 kg</option>
         </select>
       </p>
 
-      <!-- 4. Podaci za dostavu: unos teksta -->
-      <fieldset>
-        <legend>Unesite vaše podatke za dostavu:</legend>
+        <p>Unesite vaše podatke za dostavu:</p>
 
         <p>
-          <label for="ime">Ime i prezime:</label>
-          <input type="text" id="ime" name="ime" />
+          <label for="imeIprezime">Ime i prezime:</label>
+          <input type="text" id="imeIprezime" name="imeIprezime" />
         </p>
 
         <p>
           <label for="adresa">Adresa dostave:</label>
-          <input type="text" id="adresa" name="adresa" />
+          <input type="text" id="adresa" name="adresa"/>
         </p>
 
         <p>
@@ -89,14 +51,8 @@
         </p>
 
         <p>
-          <label for="napomena">Napomena (opcionalno):</label><br />
-          <textarea id="napomena" name="napomena" rows="3" cols="40"></textarea>
+          <button type="button">Naruči paket</button>
         </p>
-      </fieldset>
-
-      <p>
-        <button type="button">Naruči paket</button>
-      </p>
     </form>
   </body>
 </html>
