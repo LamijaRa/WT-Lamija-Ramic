@@ -1,0 +1,46 @@
+html {
+    background-color: #EBE9E1;
+}
+
+body {
+    font-family: Times New Roman, Times, serif;
+}
+
+
+#naslov {
+    text-align: center;
+    font-size: 30px;
+    color: #E43D12;
+}
+
+#main {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.odjeljak {
+    padding: 20px;
+    border: 3px solid #ccc;
+}
+
+.odjeljak h2 {
+    font-size: 30px;
+    color: #D6536D;
+}
+
+.odjeljak p {
+    font-size: 20px;
+    color: black;
+    text-align: justify;
+}
+
+.odjeljak h3 {
+    font-size: 25px;
+    color: #EFB11D;
+}
+
+.preporuceni-odjeljak {
+    background-color: lightblue;
+    padding: 20px;
+    border: 3px solid #E43D12;
+}
